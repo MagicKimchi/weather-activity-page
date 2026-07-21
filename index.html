@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="ko">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>날씨 기반 활동 추천</title>
+            <link rel="stylesheet" href="css/style.css">
+        </head>
+        <body>
+            <header>
+                <h1>날씨 기반 활동 추천</h1>
+                <p>도시를 입력하면 현재 날씨에 맞는 활동을 추천해 드립니다.</p>
+                <img src="assets/weather.jpg" alt="맑은 날씨">
+            </header>
+            <main>
+                <section>
+                    <form>
+                        <fieldset class="city-search">
+                            <legend>도시 정보</legend>
+                            <p>
+                                <label for="city-input">도시 검색</label>
+                                <input type="text" id="city-input" name="cityName" placeholder="도시를 입력해주세요">
+                                <button type="submit">검색</button>
+                            </p>
+                        </fieldset>                        
+                    </form>
+                </section>
+                <section class="search-result">
+                    <h2>검색 결과</h2>
+                        <div>
+                            <h3>추천활동</h3>
+                            <p id="recommend-activity"></p>
+                            <h3>추천이유</h3>
+                            <p id="recommend-reason"></p>
+                            <h3>주의사항</h3>
+                            <p id="caution"></p>
+                        </div>
+                </section>
+            </main>
+            <script src="js/script.js"></script>
+        </body>
+    </html>
